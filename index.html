@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.min.css">
+    <title>Exchange Rate Calculator</title>
+</head>
+<body>
+  
+  <img src="img/money.png" alt="moneyImg" class="money-img">
+  <h1>Exchange Rate Calculator</h1>
+  <p>Choose the currence and the amounts to get the exchange rate</p>
+
+    <!-- Currenct Exchange Container -->
+    <div class="container">
+
+      <div class="currency">
+        <select name="" id="currency-one">
+          <option value="USD">USD</option>
+          <option value="RUB">RUB</option>
+          <option value="EUR" selected>EUR</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1">
+      </div>
+
+      <!-- Button to swap currency -->
+      <div class="swap-rate-container">
+        <button class="btn" id="rate">Swap</button>
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="currency">
+        <select name="" id="currency-two">
+          <option value="USD">USD</option>
+          <option value="RUB">RUB</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0">
+      </div>
+
+    </div>
+
+
+   
+  
+  <script src="script.js"></script>
+</body>
+</html>
